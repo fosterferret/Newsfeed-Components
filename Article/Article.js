@@ -140,8 +140,8 @@ const data = [
    p.classList.add('date');
    span.classList.add('expandButton');
 
-   span.addEventListener('click', e => {
-    div.classList.toggle('article-open');
+   span.addEventListener('click', event => {
+    event.currentTarget.parentNode.classList.toggle('article-open')
     div.stopPropagation();
   });
 
